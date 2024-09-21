@@ -1,0 +1,61 @@
+/* Card.css */
+
+.card-container {
+  @apply relative w-full mx-2 overflow-hidden rounded-md border cursor-pointer transition-transform duration-300 hover:scale-105 my-1;
+}
+
+.card-image {
+  @apply w-full h-full object-cover;
+}
+
+.card-overlay {
+  @apply absolute inset-0 flex items-end justify-center;
+}
+
+.card-content {
+  @apply flex-1 flex items-center flex-col py-1;
+}
+
+.card-title {
+  @apply text-white text-lg font-bold flex items-center;
+}
+.card-SubContainer {
+  @apply flex px-3;
+}
+.card-desc {
+  @apply text-white text-base font-medium;
+}
+@media (max-width: 480px) {
+  /* Custom styles for mobile devices */
+
+  .card-SubContainer {
+    @apply flex-col justify-center;
+  }
+  .card-title {
+    @apply text-xs font-bold flex items-center;
+  }
+  .card-desc {
+    @apply text-xs font-medium;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+
+  .card-SubContainer {
+    @apply flex-col justify-center;
+  }
+  .card-title {
+    @apply text-xs font-bold flex items-center;
+  }
+  .card-desc {
+    @apply text-xs font-medium;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Styles for large devices */
+  .card-container {
+    /* One-fourth width for large screens */
+  }
+}

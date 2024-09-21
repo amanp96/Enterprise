@@ -1,0 +1,100 @@
+/* Import Tailwind layers if needed */
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+/* Custom styles using @apply */
+.header {
+  @apply sticky top-0 z-50 bg-white;
+}
+
+.navbar {
+  @apply px-4 py-5 flex mx-auto;
+}
+
+.logo {
+  @apply mr-4 py-1.5 ml-5 text-3xl font-bold text-black;
+}
+
+.navbar-item {
+  @apply items-center p-1 font-sans text-sm antialiased font-medium leading-normal gap-x-2 text-slate-900;
+}
+
+.ullist {
+  @apply flex flex-col gap-2 ml-4 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6;
+}
+
+.nav-link {
+  @apply relative text-lg w-fit block;
+}
+
+.nav-link::after {
+  @apply block content-[''] absolute h-[3px] bg-black w-full scale-x-0 transition duration-300 origin-center;
+}
+
+.nav-link:hover::after {
+  @apply scale-x-100;
+}
+
+.nav-text {
+  @apply font-medium   text-black text-xs;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For small screens (Mobile devices like phones) */
+@media (max-width: 640px) {
+  .navbar {
+    @apply flex-col items-start;
+  }
+
+  .logo {
+    @apply ml-2 text-2xl;
+  }
+
+  .ullist {
+    @apply flex-col ml-2;
+  }
+
+  .nav-text {
+    @apply text-sm;
+  }
+}
+
+/* For medium screens (Tablets and small laptops) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .navbar {
+    @apply flex-row items-center justify-between;
+  }
+
+  .logo {
+    @apply ml-4 text-3xl;
+  }
+
+  .ullist {
+    @apply flex-row gap-4;
+  }
+
+  .nav-text {
+    @apply text-base;
+  }
+}
+
+/* For large screens (Desktops and larger laptops) */
+@media (min-width: 1025px) {
+  .navbar {
+    @apply flex-row justify-between;
+  }
+
+  .logo {
+    @apply text-3xl;
+  }
+
+  .ullist {
+    @apply flex-row gap-6;
+  }
+
+  .nav-text {
+    @apply text-sm;
+  }
+}
