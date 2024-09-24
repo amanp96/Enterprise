@@ -16,7 +16,7 @@ const Header = () => {
       <div className="max-w-screen-xl items-center  mx-auto ">
         <nav className="navbar">
           <div className="flex-1">
-            <a className="logo">DiptiEnterprise</a>
+            <a className="logo">DeeptiEnterprise</a>
           </div>
           <ul
             className={classNames("ullist  lg:flex", {
