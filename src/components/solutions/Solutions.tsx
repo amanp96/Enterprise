@@ -1,5 +1,3 @@
-import React from "react";
-import { Images } from "../../assets";
 import Card from "./Card";
 
 function Solutions() {

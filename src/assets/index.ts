@@ -9,7 +9,7 @@ import card4 from "./card4.jpg";
 // import image5 from "./image5.avif";
 import formbackground from "./formbackground.avif";
 import footerImage from "./footer.jpg";
-import officeImage from "./officeImage.avif";
+
 export const Images = [
   { caurosal: image1, text: "" },
   { caurosal: image2, text: "" },

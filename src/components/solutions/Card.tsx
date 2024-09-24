@@ -1,4 +1,3 @@
-import React from "react";
 import { Cards } from "../../assets";
 import "./Card.css"; // Import the CSS file
 

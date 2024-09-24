@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const FloatLabelInput = ({ label, type, value, onChange }) => {
+const FloatLabelInput = ({ label, type, value, onChange }: any) => {
   const [isFocused, setIsFocused] = useState(false);
 
   const handleFocus = () => {
     setIsFocused(true);
   };
 
-  const handleBlur = () => {
-    setIsFocused(false);
-  };
   return (
     <div className="relative mb-6">
       <input

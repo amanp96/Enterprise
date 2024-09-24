@@ -3,7 +3,6 @@ import { Carousel } from "react-responsive-carousel";
 import { Images } from "../../assets";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Button from "./Button";
-import Solutions from "../solutions/Solutions";
 
 function Caurosal() {
   const caurosalRef = useRef<any>(null);

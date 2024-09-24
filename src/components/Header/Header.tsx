@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./Styles.css";
 
@@ -16,7 +16,7 @@ const Header = () => {
       <div className="max-w-screen-xl items-center  mx-auto ">
         <nav className="navbar">
           <div className="flex-1">
-            <a className="logo">PharmaEnterprise</a>
+            <a className="logo">DiptiEnterprise</a>
           </div>
           <ul
             className={classNames("ullist  lg:flex", {

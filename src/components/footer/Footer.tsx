@@ -1,6 +1,4 @@
-import React from "react";
-import { footerBacground, Images } from "../../assets";
-import Button from "../caurosal/Button";
+import { footerBacground } from "../../assets";
 
 type Props = {};
 

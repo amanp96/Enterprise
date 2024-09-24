@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { formBackground } from "../../assets";
 import FloatLabelInput from "./FloatlabelInput";
 
@@ -9,9 +9,7 @@ const Form = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [location, setLocation] = useState("");
   const [peopleCount, setPeopleCount] = useState("");
-  const handleChange = (e: any) => {
-    setName(e.target.value);
-  };
+
   return (
     <div className=" px-16 relative py-6">
       <div

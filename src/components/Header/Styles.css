@@ -64,7 +64,7 @@
 /* For medium screens (Tablets and small laptops) */
 @media (min-width: 641px) and (max-width: 1024px) {
   .navbar {
-    @apply flex-row items-center justify-between;
+    @apply flex-col items-start justify-between;
   }
 
   .logo {
