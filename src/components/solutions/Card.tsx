@@ -5,13 +5,15 @@ const Card = () => {
   return (
     <div className="mt-8 mx-3">
       <div className="card-SubContainer">
-        {Cards.map((item) => {
+        {Cards?.map((item) => {
           return (
-            <div key={item?.card} className="card-container">
-              {/* Image */}
-              <img src={item?.card} className="card-image" alt="Card" />
+            <div className="card-container">
+              <div key={item?.card}>
+                {/* Image */}
+                <img src={item?.card} className="card-image" alt="Card" />
 
-              {/* Text Overlay */}
+                {/* Text Overlay */}
+              </div>
               <div className="card-overlay">
                 <div className="card-content">
                   <p className="card-title">{item?.title}</p>

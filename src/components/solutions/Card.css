@@ -1,7 +1,7 @@
 /* Card.css */
 
 .card-container {
-  @apply relative w-full mx-2 overflow-hidden rounded-md border cursor-pointer transition-transform duration-300 hover:scale-105 my-1;
+  @apply relative w-full  mx-2 overflow-hidden rounded-md border cursor-pointer transition-transform duration-300 hover:scale-105 my-1;
 }
 
 .card-image {
@@ -9,7 +9,7 @@
 }
 
 .card-overlay {
-  @apply absolute inset-0 flex items-end justify-center;
+  @apply relative inset-0 flex items-end justify-center p-2;
 }
 
 .card-content {
@@ -17,13 +17,13 @@
 }
 
 .card-title {
-  @apply text-white text-lg font-bold flex items-center;
+  @apply text-sky-700 text-lg font-bold flex items-center;
 }
 .card-SubContainer {
   @apply flex px-3;
 }
 .card-desc {
-  @apply text-white text-base font-medium;
+  @apply text-slate-600 text-base font-medium;
 }
 @media (max-width: 480px) {
   /* Custom styles for mobile devices */

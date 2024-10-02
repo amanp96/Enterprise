@@ -1,14 +1,15 @@
 import image1 from "./image1.jpg";
 import image2 from "./image2.png";
 import image3 from "./image3.jpg";
-import card1 from "./card1.jpg";
-import card2 from "./card2.jpg";
-import card3 from "./card3.jpg";
-import card4 from "./card4.jpg";
+import card1 from "./product1.jpg";
+import card2 from "./product2.jpg";
+import card3 from "./product3.jpg";
+import card4 from "./product4.jpg";
 // import image4 from "./image4.avif";
 // import image5 from "./image5.avif";
 import formbackground from "./formbackground.avif";
 import footerImage from "./footer.jpg";
+import logoImage from "./logo.jpeg";
 
 export const Images = [
   { caurosal: image1, text: "" },
@@ -20,16 +21,27 @@ export const Images = [
 export const Cards = [
   {
     card: card1,
-    title: "GLOBAL GENERICS",
-    desc: "Active Pharmaceutical Ingredients",
+    title: "Lisa X",
+    desc: "Fully Automated 6 Plate ELISA Processor ",
   },
-  { card: card2, title: "HOME HEALTH", desc: "Home Diagnostic Products" },
-  { card: card3, title: "DR. MOREPEN", desc: "OTC & Healthcare Products" },
+  {
+    card: card2,
+    title: "H 360",
+    desc: "Automated 3 Part Differential Hematology Analyzer",
+    // title: "ELite 580",
+    // desc: "Automated 5 Part Hematology Analyzer with continuous loading capacity",
+  },
+  {
+    card: card3,
+    title: "Cube 30 touch",
+    desc: "Automated ESR Analyzer.",
+  },
   {
     card: card4,
-    title: "FINISHED FORMULATIONS",
-    desc: "High Quality Generic Medicines",
+    title: "Erba ELAN 30s",
+    desc: "Fully Automated micro strip ELISA processor.",
   },
 ];
 export const footerBacground = footerImage;
 export const formBackground = formbackground;
+export const LogoImage = logoImage;

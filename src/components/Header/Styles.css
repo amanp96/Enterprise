@@ -39,7 +39,9 @@
 .nav-text {
   @apply font-medium   text-black text-xs;
 }
-
+.logoImage {
+  @apply h-16 w-16;
+}
 /* Media Queries for Responsive Design */
 
 /* For small screens (Mobile devices like phones) */
@@ -59,6 +61,9 @@
   .nav-text {
     @apply text-sm;
   }
+  .logoImage {
+    @apply h-10 w-10;
+  }
 }
 
 /* For medium screens (Tablets and small laptops) */
@@ -77,6 +82,9 @@
 
   .nav-text {
     @apply text-base;
+  }
+  .logoImage {
+    @apply h-14 w-14;
   }
 }
 

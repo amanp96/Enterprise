@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { useState } from "react";
 
 import "./Styles.css";
+import { LogoImage } from "../../assets";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -12,11 +13,15 @@ const Header = () => {
   };
 
   return (
-    <header className="header  flex-1">
-      <div className="max-w-screen-xl items-center  mx-auto ">
-        <nav className="navbar">
-          <div className="flex-1">
-            <a className="logo">DeeptiEnterprise</a>
+    <header className="header  flex-1 ">
+      <div className="max-w-screen-xl items-center mx-auto">
+        <nav className="navbar ">
+          <div className="">
+            <a className="cursor-pointer">
+              <img src={LogoImage} className="logoImage" />
+            </a>
+
+            {/* <a className="logo">DeeptiEnterprise</a> */}
           </div>
           <ul
             className={classNames("ullist  lg:flex", {
@@ -52,7 +57,7 @@ const Header = () => {
           </ul>
         </nav>
         <button
-          className="hamburger-btn lg:hidden absolute top-5 right-10" /* Hide the button on larger screens */
+          className="hamburger-btn lg:hidden absolute top-6 right-10 " /* Hide the button on larger screens */
           onClick={toggleDrawer}
         >
           {/* Hamburger Icon */}
