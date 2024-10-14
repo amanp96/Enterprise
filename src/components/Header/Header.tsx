@@ -92,7 +92,7 @@ const Header = () => {
               }}
             >
               <a href="#" className="nav-link">
-                <span className="nav-text">Segments</span>
+                <span className="nav-text">SEGMENTS</span>
               </a>
               {hover === "Segments" && (
                 <div className="hoverCard">
