@@ -64,10 +64,11 @@ const Header = () => {
     <header className="header  flex-1 ">
       <div className="max-w-screen-xl items-center mx-auto">
         <nav className="navbar ">
-          <div className="">
+          <div className="flex  flex-col items-center">
             <a className="cursor-pointer">
               <img src={LogoImage} className="logoImage" />
             </a>
+            <h2 className=" hidden lg:block">DEEPTI ENTERPRISES</h2>
 
             {/* <a className="logo">DeeptiEnterprise</a> */}
           </div>

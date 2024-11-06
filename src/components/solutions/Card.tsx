@@ -17,7 +17,7 @@ const Card = () => {
               <div className="card-overlay">
                 <div className="card-content">
                   <p className="card-title">{item?.title}</p>
-                  <span className="card-desc">{item?.desc}</span>
+                  {/* <span className="card-desc">{item?.desc}</span> */}
                 </div>
               </div>
             </div>
