@@ -45,6 +45,9 @@
 .hoverCard {
   @apply bg-white absolute top-20 p-2 z-10  rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300;
 }
+.segmentCard {
+  @apply bg-white absolute top-40 p-5 z-10 w-auto right-2 left-5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300;
+}
 .hoverDetail {
   @apply py-2 cursor-pointer hover:border-b-2;
 }

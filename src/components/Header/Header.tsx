@@ -6,7 +6,12 @@ import { LogoImage } from "../../assets";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [hover, setIsHover] = useState<"Segments" | "Clients" | null>(null);
+  const [hover, setIsHover] = useState<
+    "Home" | "Segments" | "Clients" | "ContactUs" | null
+  >(null);
+  const [segmentHover, setSegmentHover] = useState<"Mission & Vision" | null>(
+    null
+  );
   // Function to toggle the drawer
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -47,18 +52,76 @@ const Header = () => {
     { id: 4, productName: "Immunology" },
     { id: 5, productName: "Coagulation" },
   ];
-  const handleOnHover = (value: "Segments" | "Clients") => {
+  const Home = [
+    { id: 1, homeSegments: "Our Home" },
+    { id: 2, homeSegments: "Mission & Vision" },
+    { id: 3, homeSegments: "Our Partner" },
+  ];
+  const contactUs = [
+    { id: 1, email: "info@deeptienterprises.co.in" },
+    { id: 2, email: "deeptienterprises@rediffmail.com" },
+  ];
+  const handleOnHover = (
+    value: "Segments" | "Clients" | "ContactUs" | "Home"
+  ) => {
     id?.current && clearTimeout(id?.current);
 
     id.current = setTimeout(() => {
       setIsHover(value);
     }, 200);
   };
+  const handleSegmentHover = (value: "Mission & Vision") => {
+    id?.current && clearTimeout(id?.current);
+
+    id.current = setTimeout(() => {
+      setSegmentHover(value);
+    }, 200);
+  };
   const handleMouseLeave = () => {
     id?.current && clearTimeout(id?.current);
     id.current = setTimeout(() => {
       setIsHover(null);
+      setSegmentHover(null);
     }, 200);
+  };
+  const missionVision = () => {
+    console.log("here");
+
+    return (
+      <div className="segmentCard">
+        <h1 className="flex flex-col items-center "> MISSION & VISION</h1>
+        <h2 className="text-sky-500"> OUR MISSION </h2>
+        <h4 className="text-black mt-2">
+          {" "}
+          Health is a state of body. Wellness is a state of being. – J Stanford
+          To provide latest and superior technologies available at affordable
+          cost and effective logistic management system so as to allow our
+          esteemed customer to deliver tests results with utmost accuracy &
+          precision every time in shortest possible TAT at most affordable
+          prices.
+        </h4>
+        <h2 className="text-sky-500 mt-4">OUR VISION</h2>
+        <h4 className="text-black mt-2">
+          {" "}
+          There's nothing more important than good health - that's our principal
+          capital asset. - Arlen Specter To become a leader in providing
+          holistic services & quality tools at reasonable cost, which enable our
+          esteemed Diagnostic service provider to deliver test services to
+          patients at affordable price. Steadfast with a dedicated team of
+          committed professionals zealous to improve healthcare services through
+          practice and innovation.
+        </h4>
+        <h1 className="mt-5">
+          Deepti enterprises endeavours to extend services in all healthcare
+          units, from a remote micro lab to referral pathology laboratory,
+          covering a range of over 1500 tests in the mentioned disciplines using
+          latest technology and equipment:
+          <h2 className="mt-2">Biochemistry</h2>
+          <h2>Haematology</h2> <h2> Molecular</h2>
+          <h2> Biology Clinical Pathology</h2>
+        </h1>
+      </div>
+    );
   };
   return (
     <header className="header  flex-1 ">
@@ -78,10 +141,42 @@ const Header = () => {
               "block sm:block": isDrawerOpen,
             })}
           >
-            <li className="navbar-item">
+            <li
+              className="navbar-item"
+              onMouseEnter={() => {
+                handleOnHover("Home");
+              }}
+              onMouseLeave={() => {
+                handleMouseLeave();
+              }}
+            >
               <a href="#" className="nav-link">
                 <span className="nav-text">HOME</span>
               </a>
+              {hover === "Home" && (
+                <div className="hoverCard">
+                  <ul>
+                    {Home?.map((item) => {
+                      return (
+                        <li
+                          className="hoverDetail"
+                          onMouseEnter={() => {
+                            handleSegmentHover(item?.homeSegments);
+                          }}
+                          // onMouseLeave={() => {
+                          //   handleMouseLeave();
+                          // }}
+                        >
+                          <a href="" className="hover:text-sky-400 ">
+                            {item?.homeSegments}{" "}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
+              {segmentHover === "Mission & Vision" && missionVision()}
             </li>
             <li
               className="navbar-item"
@@ -144,10 +239,36 @@ const Header = () => {
                 </div>
               )}
             </li>
-            <li className="navbar-item">
+            <li
+              className="navbar-item"
+              onMouseEnter={() => {
+                handleOnHover("ContactUs");
+              }}
+              onMouseLeave={() => {
+                handleMouseLeave();
+              }}
+            >
               <a href="#" className="nav-link">
                 <span className="nav-text">CONTACT US</span>
               </a>
+              {hover === "ContactUs" ? (
+                <div className="hoverCard">
+                  <ul>
+                    {contactUs.map((item) => {
+                      return (
+                        <li className="hoverDetail">
+                          <a
+                            href={`mailto:${item?.email}`}
+                            className="hover:text-sky-400"
+                          >
+                            {item?.email}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              ) : null}
             </li>
           </ul>
         </nav>
