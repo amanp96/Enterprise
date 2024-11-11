@@ -9,9 +9,9 @@ const Header = () => {
   const [hover, setIsHover] = useState<
     "Home" | "Segments" | "Clients" | "ContactUs" | null
   >(null);
-  const [segmentHover, setSegmentHover] = useState<
-    "Mission & Vision" | string | null
-  >(null);
+  const [segmentHover, setSegmentHover] = useState<"Mission & Vision" | null>(
+    null
+  );
   // Function to toggle the drawer
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -70,7 +70,7 @@ const Header = () => {
       setIsHover(value);
     }, 200);
   };
-  const handleSegmentHover = (value: "Mission & Vision" | string) => {
+  const handleSegmentHover = (value: any) => {
     id?.current && clearTimeout(id?.current);
 
     id.current = setTimeout(() => {
