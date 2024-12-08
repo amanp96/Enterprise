@@ -1,0 +1,18 @@
+
+  @media(max-Width:640px){
+    .imageContainer {
+        @apply w-full h-32 flex  items-center
+      }
+  }
+  @media(min-Width:641px) and (max-Width:1024px){
+    .imageContainer {
+        @apply w-full h-80 flex  items-center
+      }
+  }
+  @media(min-Width:1025px){
+    .imageContainer {
+        @apply w-full h-80 flex  items-center
+      }
+  }
+  
+  

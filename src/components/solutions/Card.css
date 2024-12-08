@@ -15,7 +15,9 @@
 .card-content {
   @apply flex-1 flex items-center flex-col py-1;
 }
-
+.segmentCard {
+  @apply bg-white  top-40 p-5 z-10 w-auto  rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300;
+}
 .card-title {
   @apply text-sky-700 text-lg font-bold flex items-center;
 }

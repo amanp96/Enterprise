@@ -1,0 +1,31 @@
+.segmentCard {
+  @apply bg-white  top-40 p-5 z-10 w-auto  rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 my-10 flex flex-col   items-center lg:mx-10;
+}
+.segmentWithCard {
+  @apply my-10 flex flex-col mx-10   items-center;
+}
+.sub-container {
+  @apply flex flex-1 flex-col mt-2  lg:flex-row;
+}
+.inputName {
+  @apply w-64 my-2 font-montserrat font-medium text-sm lg:my-0;
+}
+.inputContainer {
+  @apply w-full;
+}
+
+@media (max-width: 640px) {
+  .imageContainer {
+    @apply w-full h-32 flex  items-center;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .imageContainer {
+    @apply w-full h-80 flex  items-center;
+  }
+}
+@media (min-width: 1025px) {
+  .imageContainer {
+    @apply w-full h-80 flex  items-center;
+  }
+}

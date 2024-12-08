@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const FloatLabelInput = ({ label, type, value, onChange }: any) => {
+const FloatLabelInput = ({ label, type, value, onChange, className }: any) => {
   const [isFocused, setIsFocused] = useState(false);
 
   const handleFocus = () => {
@@ -8,14 +8,14 @@ const FloatLabelInput = ({ label, type, value, onChange }: any) => {
   };
 
   return (
-    <div className="relative mb-6">
+    <div className={`relative w-96 ${className}`}>
       <input
         type={type}
         value={value}
         onChange={onChange}
         onFocus={handleFocus}
         // onBlur={handleBlur}
-        className="w-full px-3 py-3 border-2 rounded-md border-gray-500  focus:outline-none focus:border-indigo-500"
+        className=" w-full py-2 px-3 border-2 rounded-md border-gray-300 focus:outline-none focus:border-sky-400"
       />
       <label
         className={`absolute left-3 transition-all duration-300 ${

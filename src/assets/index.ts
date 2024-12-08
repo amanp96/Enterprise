@@ -10,6 +10,7 @@ import card4 from "./product4.jpg";
 import formbackground from "./formbackground.avif";
 import footerImage from "./footer.jpg";
 import logoImage from "./logo.jpeg";
+import support from "./supportImage.jpg";
 
 export const Images = [
   { caurosal: image1, text: "" },
@@ -45,3 +46,4 @@ export const Cards = [
 export const footerBacground = footerImage;
 export const formBackground = formbackground;
 export const LogoImage = logoImage;
+export const supportImage = support;
