@@ -1,4 +1,4 @@
-import { footerBacground, LogoImage } from "../../assets";
+import { footerBacground } from "../../assets";
 import { FaFacebook } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { TiSocialYoutubeCircular } from "react-icons/ti";

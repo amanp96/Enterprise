@@ -5,19 +5,20 @@ import "./Faq.css";
 
 type Props = {};
 
-const Faq = (props: Props) => {
-  const [userInfo, setUserInfo] = useState({
-    name: "",
-    companyName: "",
-    state: "",
-    city: "",
-    zip: "",
-    mobileNumber: "",
-    email: "",
-  });
-  const handelChangeText = (_updateValue: string, e: string) => {
-    setUserInfo((prev) => ({ ...prev, [_updateValue]: e }));
-  };
+const Faq = ({}) => {
+  // const [userInfo, setUserInfo] = useState({
+  //   name: "",
+  //   companyName: "",
+  //   state: "",
+  //   city: "",
+  //   zip: "",
+  //   mobileNumber: "",
+  //   email: "",
+  // });
+  // const handelChangeText = (_updateValue: string, e: string) => {
+  //   console.log(userInfo);
+  //   setUserInfo((prev) => ({ ...prev, [_updateValue]: e }));
+  // };
   return (
     <div>
       <div

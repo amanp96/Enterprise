@@ -9,42 +9,42 @@ const Header = () => {
   const [hover, setIsHover] = useState<
     "Home" | "Segments" | "Clients" | "ContactUs" | null
   >(null);
-  const [segmentHover, setSegmentHover] = useState<"Mission & Vision" | null>(
-    null
-  );
+  // const [segmentHover, setSegmentHover] = useState<"Mission & Vision" | null>(
+  //   null
+  // );
   // Function to toggle the drawer
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
   const id = useRef<number | null>(null);
-  const ourClients = [
-    {
-      id: 1,
-      clientName: "Shalby Hospital",
-      link: "https://www.shalby.org/hospitals/indore-shalby/",
-    },
-    {
-      id: 2,
-      clientName: "CHL Care hospital",
-      link: "https://www.carehospitals.com/indore/",
-    },
-    {
-      id: 3,
-      clientName: "Lupin Diagnostics",
-      link: "https://www.lupindiagnostics.com/",
-    },
-    {
-      id: 4,
-      clientName: "Sodani Diagnostics",
-      link: "https://www.sampurna.care/",
-    },
-    { id: 5, clientName: "Endocrine laboratory" },
-    {
-      id: 6,
-      clientName: "Unipath laboratory",
-      link: "https://www.unipath.in/",
-    },
-  ];
+  // const ourClients = [
+  //   {
+  //     id: 1,
+  //     clientName: "Shalby Hospital",
+  //     link: "https://www.shalby.org/hospitals/indore-shalby/",
+  //   },
+  //   {
+  //     id: 2,
+  //     clientName: "CHL Care hospital",
+  //     link: "https://www.carehospitals.com/indore/",
+  //   },
+  //   {
+  //     id: 3,
+  //     clientName: "Lupin Diagnostics",
+  //     link: "https://www.lupindiagnostics.com/",
+  //   },
+  //   {
+  //     id: 4,
+  //     clientName: "Sodani Diagnostics",
+  //     link: "https://www.sampurna.care/",
+  //   },
+  //   { id: 5, clientName: "Endocrine laboratory" },
+  //   {
+  //     id: 6,
+  //     clientName: "Unipath laboratory",
+  //     link: "https://www.unipath.in/",
+  //   },
+  // ];
   const productDeatil = [
     { id: 1, productName: "Biochemistry" },
     { id: 2, productName: "Haematology" },
@@ -52,11 +52,11 @@ const Header = () => {
     { id: 4, productName: "Immunology" },
     { id: 5, productName: "Coagulation" },
   ];
-  const Home = [
-    { id: 1, homeSegments: "Our Home" },
-    { id: 2, homeSegments: "Mission & Vision" },
-    { id: 3, homeSegments: "Our Partner" },
-  ];
+  // const Home = [
+  //   { id: 1, homeSegments: "Our Home" },
+  //   { id: 2, homeSegments: "Mission & Vision" },
+  //   { id: 3, homeSegments: "Our Partner" },
+  // ];
   const contactUs = [
     { id: 1, email: "Service Support", link: "/ServiceSupport" },
     { id: 2, email: "Enquiry", link: "/Faq" },
@@ -70,18 +70,18 @@ const Header = () => {
       setIsHover(value);
     }, 200);
   };
-  const handleSegmentHover = (value: any) => {
-    id?.current && clearTimeout(id?.current);
+  // const handleSegmentHover = (value: any) => {
+  //   id?.current && clearTimeout(id?.current);
 
-    id.current = setTimeout(() => {
-      setSegmentHover(value);
-    }, 200);
-  };
+  //   id.current = setTimeout(() => {
+  //     setSegmentHover(value);
+  //   }, 200);
+  // };
   const handleMouseLeave = () => {
     id?.current && clearTimeout(id?.current);
     id.current = setTimeout(() => {
       setIsHover(null);
-      setSegmentHover(null);
+      // setSegmentHover(null);
     }, 200);
   };
 
