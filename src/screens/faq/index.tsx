@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import FloatLabelInput from "../../components/form/FloatlabelInput";
+import { useState } from "react";
 import { supportImage } from "../../assets";
 import ServiceSupport from "../serviceSupport";
 import "./Faq.css";
