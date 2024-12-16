@@ -10,6 +10,7 @@ import card4 from "./product4.jpg";
 import formbackground from "./formbackground.avif";
 import footerImage from "./footer.jpg";
 import logoImage from "./logo.jpeg";
+import support from "./supportImage.jpg";
 
 export const Images = [
   { caurosal: image1, text: "" },
@@ -21,27 +22,28 @@ export const Images = [
 export const Cards = [
   {
     card: card1,
-    title: "Lisa X",
+    title: "Invitronix",
     desc: "Fully Automated 6 Plate ELISA Processor ",
   },
   {
     card: card2,
-    title: "H 360",
+    title: "ST-200CL",
     desc: "Automated 3 Part Differential Hematology Analyzer",
     // title: "ELite 580",
     // desc: "Automated 5 Part Hematology Analyzer with continuous loading capacity",
   },
   {
     card: card3,
-    title: "Cube 30 touch",
+    title: "XN-L Series",
     desc: "Automated ESR Analyzer.",
   },
   {
     card: card4,
-    title: "Erba ELAN 30s",
+    title: "MAGLUMI X3",
     desc: "Fully Automated micro strip ELISA processor.",
   },
 ];
 export const footerBacground = footerImage;
 export const formBackground = formbackground;
 export const LogoImage = logoImage;
+export const supportImage = support;

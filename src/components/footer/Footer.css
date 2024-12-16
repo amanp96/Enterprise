@@ -1,0 +1,21 @@
+.iconsStyle {
+  @apply text-3xl mx-1;
+}
+.bgImageContainer {
+  @apply w-full flex py-8 px-20;
+}
+@media (max-width: 640px) {
+  .imageContainer {
+    @apply w-full h-32 flex  items-center;
+  }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .imageContainer {
+    @apply w-full h-80 flex  items-center;
+  }
+}
+@media (min-width: 1025px) {
+  .imageContainer {
+    @apply w-full h-80 flex  items-center;
+  }
+}

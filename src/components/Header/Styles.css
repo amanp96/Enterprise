@@ -37,10 +37,17 @@
 }
 
 .nav-text {
-  @apply font-medium   text-black text-xs;
+  @apply font-semibold font-montserrat  text-black text-xs;
 }
 .logoImage {
   @apply h-16 w-16;
+}
+.hoverCard {
+  @apply bg-white absolute top-20 p-2 z-10  rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300;
+}
+
+.hoverDetail {
+  @apply py-2 cursor-pointer hover:border-b-2;
 }
 /* Media Queries for Responsive Design */
 
@@ -59,7 +66,7 @@
   }
 
   .nav-text {
-    @apply text-sm;
+    @apply font-semibold font-montserrat text-sm;
   }
   .logoImage {
     @apply h-10 w-10;
@@ -81,7 +88,7 @@
   }
 
   .nav-text {
-    @apply text-base;
+    @apply font-semibold font-montserrat text-base;
   }
   .logoImage {
     @apply h-14 w-14;
@@ -103,6 +110,6 @@
   }
 
   .nav-text {
-    @apply text-sm;
+    @apply font-semibold font-montserrat text-sm;
   }
 }
