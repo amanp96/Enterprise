@@ -1,24 +1,8 @@
-import { useState } from "react";
 import { supportImage } from "../../assets";
 import ServiceSupport from "../serviceSupport";
 import "./Faq.css";
 
-type Props = {};
-
 const Faq = ({}) => {
-  // const [userInfo, setUserInfo] = useState({
-  //   name: "",
-  //   companyName: "",
-  //   state: "",
-  //   city: "",
-  //   zip: "",
-  //   mobileNumber: "",
-  //   email: "",
-  // });
-  // const handelChangeText = (_updateValue: string, e: string) => {
-  //   console.log(userInfo);
-  //   setUserInfo((prev) => ({ ...prev, [_updateValue]: e }));
-  // };
   return (
     <div>
       <div

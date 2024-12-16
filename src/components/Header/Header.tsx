@@ -54,8 +54,6 @@ const Header = () => {
               <img src={LogoImage} className="logoImage" />
             </a>
             <h2 className=" hidden lg:block">DEEPTI ENTERPRISES</h2>
-
-            {/* <a className="logo">DeeptiEnterprise</a> */}
           </div>
           <ul
             className={classNames("ullist  lg:flex", {
@@ -75,30 +73,6 @@ const Header = () => {
               <a href="/" className="nav-link">
                 <span className="nav-text">HOME</span>
               </a>
-              {/* {hover === "Home" && (
-                <div className="hoverCard">
-                  <ul>
-                    {Home?.map((item) => {
-                      return (
-                        <li
-                          className="hoverDetail"
-                          onMouseEnter={() => {
-                            handleSegmentHover(item?.homeSegments);
-                          }}
-                          // onMouseLeave={() => {
-                          //   handleMouseLeave();
-                          // }}
-                        >
-                          <a href="" className="hover:text-sky-400 ">
-                            {item?.homeSegments}{" "}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              )} */}
-              {/* {segmentHover === "Mission & Vision" && missionVision()} */}
             </li>
             <li
               className="navbar-item"
@@ -133,34 +107,7 @@ const Header = () => {
                 <span className="nav-text">CLIENTS</span>
               </a>
             </li>
-            {/* <li
-              className="navbar-item"
-              onMouseEnter={() => {
-                handleOnHover("Clients");
-              }}
-              onMouseLeave={() => {
-                handleMouseLeave();
-              }}
-            >
-              <a className="nav-link">
-                <span className="nav-text">CONTACT US</span>
-              </a>
-              {hover === "Clients" && (
-                <div className="hoverCard">
-                  <ul>
-                    {ourClients?.map((item) => {
-                      return (
-                        <li className="hoverDetail">
-                          <a href={item?.link} className="hover:text-sky-400">
-                            {item?.clientName}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              )}
-            </li> */}
+
             <li
               className="navbar-item"
               onMouseEnter={() => {
