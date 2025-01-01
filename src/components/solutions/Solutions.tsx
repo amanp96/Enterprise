@@ -1,9 +1,11 @@
+import PartnersList from "../../screens/ParnersList";
 import Card from "./Card";
+import { motion } from "motion/react";
 
 function Solutions() {
   const missionVision = () => {
     return (
-      <div className="segmentCard">
+      <div className="segmentCard" id="missionvision">
         <h1 className="flex flex-col my-4 font-bold text-base">
           {" "}
           MISSION & VISION
@@ -42,18 +44,39 @@ function Solutions() {
     );
   };
   return (
-    <div>
-      <div className="my-5 mx-16">
-        <div className=" mx-6 ">
-          <h1 className="text-sky-700 font-medium text-xl">
-            Featured Products
-          </h1>
-        </div>
-        <div className="flex">
-          <Card />
-        </div>
-        <div className=" mx-6 ">{missionVision()}</div>
+    <div className="my-5 mx-16">
+      {/* Section 1: Title */}
+      <div className="mx-6">
+        <motion.h1
+          className="text-sky-700 font-medium text-xl"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          Featured Products
+        </motion.h1>
       </div>
+
+      {/* Section 2: Cards */}
+      <motion.div
+        className="flex"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <Card />
+      </motion.div>
+
+      {/* Section 3: Mission and Vision */}
+      <motion.div
+        className=""
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+      >
+        {missionVision()}
+      </motion.div>
+      <PartnersList />
     </div>
   );
 }

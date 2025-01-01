@@ -34,7 +34,7 @@ const ServiceSupport = ({ hideImage = false, showCard = false }: Props) => {
     <div>
       {!hideImage && (
         <div
-          className="imageContainer "
+          className="imageContainer"
           style={{
             backgroundImage: `url(${supportImage})`,
             backgroundRepeat: "no-repeat",

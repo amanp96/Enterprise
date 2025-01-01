@@ -9,13 +9,42 @@ const Header = () => {
   const [hover, setIsHover] = useState<
     "Home" | "Segments" | "Clients" | "ContactUs" | null
   >(null);
-
+  const [segmentHover, setSegmentHover] = useState<"Mission & Vision" | null>(
+    null
+  );
   // Function to toggle the drawer
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
   const id = useRef<number | null>(null);
-
+  const ourClients = [
+    {
+      id: 1,
+      clientName: "Shalby Hospital",
+      link: "https://www.shalby.org/hospitals/indore-shalby/",
+    },
+    {
+      id: 2,
+      clientName: "CHL Care hospital",
+      link: "https://www.carehospitals.com/indore/",
+    },
+    {
+      id: 3,
+      clientName: "Lupin Diagnostics",
+      link: "https://www.lupindiagnostics.com/",
+    },
+    {
+      id: 4,
+      clientName: "Sodani Diagnostics",
+      link: "https://www.sampurna.care/",
+    },
+    { id: 5, clientName: "Endocrine laboratory" },
+    {
+      id: 6,
+      clientName: "Unipath laboratory",
+      link: "https://www.unipath.in/",
+    },
+  ];
   const productDeatil = [
     { id: 1, productName: "Biochemistry" },
     { id: 2, productName: "Haematology" },
@@ -27,6 +56,11 @@ const Header = () => {
   const contactUs = [
     { id: 1, email: "Service Support", link: "/ServiceSupport" },
     { id: 2, email: "Enquiry", link: "/Faq" },
+  ];
+  const Home = [
+    { id: 1, homeSegments: "Home", link: "home" },
+    { id: 2, homeSegments: "Mission & Vision", link: "missionvision" },
+    { id: 3, homeSegments: "Partners", link: "partners" },
   ];
   const handleOnHover = (
     value: "Segments" | "Clients" | "ContactUs" | "Home"
@@ -44,7 +78,13 @@ const Header = () => {
       setIsHover(null);
     }, 200);
   };
+  const handleSegmentHover = (value: any) => {
+    id?.current && clearTimeout(id?.current);
 
+    id.current = setTimeout(() => {
+      setSegmentHover(value);
+    }, 200);
+  };
   return (
     <header className="header  flex-1 ">
       <div className="max-w-screen-xl items-center mx-auto">
@@ -73,6 +113,39 @@ const Header = () => {
               <a href="/" className="nav-link">
                 <span className="nav-text">HOME</span>
               </a>
+              {hover === "Home" && (
+                <div className="hoverCard">
+                  <ul>
+                    {Home?.map((item) => {
+                      return (
+                        <li
+                          className="hoverDetail"
+                          onMouseEnter={() => {
+                            handleSegmentHover(item?.homeSegments);
+                          }}
+                          onMouseLeave={() => {
+                            handleMouseLeave();
+                          }}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            const section = document.getElementById(item?.link);
+                            if (section) {
+                              section.scrollIntoView({
+                                behavior: "smooth",
+                                block: "end",
+                              });
+                            }
+                          }}
+                        >
+                          <a href="" className="hover:text-sky-400 ">
+                            {item?.homeSegments}{" "}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
             </li>
             <li
               className="navbar-item"
@@ -102,10 +175,37 @@ const Header = () => {
                 </div>
               )}
             </li>
-            <li className="navbar-item">
+            <li
+              className="navbar-item"
+              onMouseEnter={() => {
+                handleOnHover("Clients");
+              }}
+              onMouseLeave={() => {
+                handleMouseLeave();
+              }}
+            >
               <a href="#" className="nav-link">
                 <span className="nav-text">CLIENTS</span>
               </a>
+              {hover === "Clients" && (
+                <div className="hoverCard">
+                  <ul>
+                    {ourClients?.map((item) => {
+                      return (
+                        <li className="hoverDetail">
+                          <a
+                            href={item?.link}
+                            className="hover:text-sky-400"
+                            target="_blank"
+                          >
+                            {item?.clientName}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
             </li>
 
             <li
