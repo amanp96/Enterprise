@@ -1,4 +1,4 @@
-const partners = [
+export const partners = [
   "Transasia Bio Medicals Ltd.",
   "Sysmex India Pvt. Ltd.",
   "Meril Diagnostic Pvt. Ltd.",

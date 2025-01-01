@@ -1,32 +1,5 @@
-import React from "react";
 import { motion } from "motion/react";
-
-// Dummy data (partner names only)
-const partners = [
-  "Transasia Bio Medicals Ltd.",
-  "Sysmex India Pvt. Ltd.",
-  "Meril Diagnostic Pvt. Ltd.",
-  "Rapid Diagnostic Pvt. Ltd.",
-  "SD Biosensor Healthcare Pvt. Ltd.",
-  "Bio Lab Diagnostics Pvt. Ltd.",
-  "Invitronics (Rokonik)",
-  "Sensa Core Medical Instrumentation Pvt. Ltd.",
-  "Lab Tech Healthcare",
-  "Arandor Performance Materials India Pvt. Ltd.",
-  "Reckon Diagnostics Pvt. Ltd.",
-  "Medispace Solutions (Snibe)",
-  "Pathoworld Labtech Pvt. Ltd.",
-  "J. Mitra & Co. Pvt. Ltd.",
-  "Human Diagnostics & Surgichem",
-  "Labtech Disposables",
-  "Lab Line Equipments Pvt. Ltd.",
-  "Huwell Life Sciences",
-  "Astra Bioscience",
-  "Immunoshop India Pvt. Ltd.",
-  "Immuno Concept India Pvt. Ltd.",
-  "Casara Diagnostics Pvt. Ltd.",
-  "Alsat Diagnostics Pvt. Ltd.",
-];
+import { partners } from "../utils/DummyData";
 
 const PartnersList = () => {
   return (
