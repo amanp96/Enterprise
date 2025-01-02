@@ -13,7 +13,7 @@ function Approute() {
           <Route path="/" element={<Home />} />
 
           <Route path="/about" element={<Aboutus />} />
-          <Route path="/ServiceSupport" element={<ServiceSupport />} />
+          <Route path="/serviceSupport" element={<ServiceSupport />} />
           <Route path="/Faq" element={<Faq />} />
         </Routes>
       </Layout>
