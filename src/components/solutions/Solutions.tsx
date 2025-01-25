@@ -1,11 +1,16 @@
 import PartnersList from "../../screens/ParnersList";
 import Card from "./Card";
 import { motion } from "motion/react";
+import "./Card.css";
 
 function Solutions() {
   const missionVision = () => {
     return (
-      <div className="segmentCard" id="missionvision">
+      <div
+        className="segmentCard m-0 mt-5
+      "
+        id="missionvision"
+      >
         <h1 className="flex flex-col my-4 font-bold text-base">
           {" "}
           MISSION & VISION
@@ -44,9 +49,9 @@ function Solutions() {
     );
   };
   return (
-    <div className="my-5 mx-16">
+    <div className="my-5 relative max-w-screen-xl mx-auto">
       {/* Section 1: Title */}
-      <div className="mx-6">
+      <div className="">
         <motion.h1
           className="text-sky-700 font-medium text-xl"
           initial={{ opacity: 0, y: 50 }}
@@ -69,7 +74,7 @@ function Solutions() {
 
       {/* Section 3: Mission and Vision */}
       <motion.div
-        className=""
+        className="flex "
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.1 }}

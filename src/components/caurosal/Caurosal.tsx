@@ -33,7 +33,8 @@ function Caurosal() {
             </div>
           ))}
         </Carousel>
-        <div className="mt-4 flex justify-center">
+
+        <div className=" flex justify-center absolute -right-8 bottom-1/2">
           <Button onPress={handlePress} />
         </div>
       </div>

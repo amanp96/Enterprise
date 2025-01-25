@@ -3,7 +3,7 @@ import "./Card.css"; // Import the CSS file
 
 const Card = () => {
   return (
-    <div className="mt-8 mx-3">
+    <div className="mt-8 ">
       <div className="card-SubContainer">
         {Cards?.map((item) => {
           return (
