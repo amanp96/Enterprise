@@ -1,6 +1,8 @@
-import image1 from "./image1.jpg";
-import image2 from "./image2.png";
-import image3 from "./image3.jpg";
+import image1 from "./image1.jpeg";
+import image2 from "./image2.jpeg";
+import websiteLogo from "./websiteImage.png";
+import image3 from "./image3.jpeg";
+import image4 from "./image4.jpeg";
 import card1 from "./product1.jpg";
 import card2 from "./product2.jpg";
 import card3 from "./product3.jpg";
@@ -14,8 +16,10 @@ import support from "./supportImage.jpg";
 
 export const Images = [
   { caurosal: image1, text: "" },
+  { caurosal: websiteLogo, text: "" },
   { caurosal: image2, text: "" },
-  { caurosal: image3, text: "hihi" },
+  { caurosal: image3, text: "" },
+  { caurosal: image4, text: "" },
   // { caurosal: image4, text: "" },
   // { caurosal: image5, text: "" },
 ];
