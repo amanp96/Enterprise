@@ -1,4 +1,4 @@
-import image1 from "./websiteImage.jpeg";
+import image1 from "./websiteImage.png";
 import image2 from "./image2.jpeg";
 import image3 from "./image3.jpeg";
 import image4 from "./image4.jpeg";
@@ -12,8 +12,7 @@ import card1 from "./product1.jpg";
 import card2 from "./product2.jpg";
 import card3 from "./product3.jpg";
 import card4 from "./product4.jpg";
-// import image4 from "./image4.avif";
-// import image5 from "./image5.avif";
+
 import formbackground from "./formbackground.avif";
 import footerImage from "./footer.jpg";
 import logoImage from "./logo.jpeg";
