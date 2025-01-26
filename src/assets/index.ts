@@ -3,6 +3,12 @@ import image2 from "./image2.jpeg";
 import websiteLogo from "./websiteImage.png";
 import image3 from "./image3.jpeg";
 import image4 from "./image4.jpeg";
+import image5 from "./image5.jpeg";
+import image6 from "./image6.jpeg";
+import image7 from "./image7.jpeg";
+import image8 from "./image8.jpeg";
+import image9 from "./image9.jpeg";
+import image10 from "./image10.jpeg";
 import card1 from "./product1.jpg";
 import card2 from "./product2.jpg";
 import card3 from "./product3.jpg";
@@ -15,13 +21,17 @@ import logoImage from "./logo.jpeg";
 import support from "./supportImage.jpg";
 
 export const Images = [
-  { caurosal: image1, text: "" },
   { caurosal: websiteLogo, text: "" },
   { caurosal: image2, text: "" },
+
   { caurosal: image3, text: "" },
   { caurosal: image4, text: "" },
-  // { caurosal: image4, text: "" },
-  // { caurosal: image5, text: "" },
+  { caurosal: image5, text: "" },
+  { caurosal: image6, text: "" },
+  { caurosal: image7, text: "" },
+  { caurosal: image8, text: "" },
+  { caurosal: image9, text: "" },
+  { caurosal: image10, text: "" },
 ];
 export const Cards = [
   {
