@@ -1,6 +1,5 @@
-import image1 from "./image1.jpeg";
+import image1 from "./websiteImage.jpeg";
 import image2 from "./image2.jpeg";
-import websiteLogo from "./websiteImage.png";
 import image3 from "./image3.jpeg";
 import image4 from "./image4.jpeg";
 import image5 from "./image5.jpeg";
@@ -21,7 +20,7 @@ import logoImage from "./logo.jpeg";
 import support from "./supportImage.jpg";
 
 export const Images = [
-  { caurosal: websiteLogo, text: "" },
+  { caurosal: image1, text: "" },
   { caurosal: image2, text: "" },
 
   { caurosal: image3, text: "" },
