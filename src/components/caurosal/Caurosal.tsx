@@ -28,7 +28,7 @@ function Caurosal() {
               <img
                 src={item.caurosal}
                 alt={`Carousel image ${index + 1}`}
-                className="w-full h-auto max-h-[400px] sm:max-h-[500px] md:max-h-[600px] object-cover rounded-md"
+                className="w-full h-auto max-h-[400px] sm:max-h-[500px] md:max-h-[600px] object-top rounded-md"
               />
             </div>
           ))}

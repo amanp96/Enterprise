@@ -46,12 +46,12 @@ export const Cards = [
   },
   {
     card: card3,
-    title: "XN-L Series",
+    title: "MAGLUMI X3",
     desc: "Automated ESR Analyzer.",
   },
   {
     card: card4,
-    title: "MAGLUMI X3",
+    title: "XN-L Series",
     desc: "Fully Automated micro strip ELISA processor.",
   },
 ];
