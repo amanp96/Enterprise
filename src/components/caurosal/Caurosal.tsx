@@ -6,14 +6,15 @@ import Button from "./Button";
 
 function Caurosal() {
   const caurosalRef = useRef<any>(null);
+
   const handlePress = () => {
     caurosalRef.current.onClickNext();
   };
+
   return (
-    <div className="py-2 ">
-      <div className=" relative flex-1  items-center">
+    <div className="py-4">
+      <div className="relative max-w-screen-xl mx-auto">
         <Carousel
-          // showIndicators={false}
           showStatus={false}
           showThumbs={false}
           showArrows={false}
@@ -22,18 +23,21 @@ function Caurosal() {
           ref={caurosalRef}
           interval={2000}
         >
-          {Images.map((item) => (
-            <div>
-              <img src={item.caurosal} />
-              {/* <p>{item.text}</p> */}
+          {Images.map((item, index) => (
+            <div key={index} className="flex justify-center">
+              <img
+                src={item.caurosal}
+                alt={`Carousel image ${index + 1}`}
+                className="w-full h-auto max-h-[400px] sm:max-h-[500px] md:max-h-[600px] object-top rounded-md"
+              />
             </div>
           ))}
         </Carousel>
-        <div className=" flex-1 flex justify-center items-center">
+
+        <div className=" flex justify-center absolute -right-8 bottom-1/2">
           <Button onPress={handlePress} />
         </div>
       </div>
-      {/* <Solutions /> */}
     </div>
   );
 }

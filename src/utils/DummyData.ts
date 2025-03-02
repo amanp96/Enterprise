@@ -8,7 +8,7 @@ export const partners = [
   "Invitronics (Rokonik)",
   "Sensa Core Medical Instrumentation Pvt. Ltd.",
   "Lab Tech Healthcare",
-  "Arandor Performance Materials India Pvt. Ltd.",
+  "Avantor Performance Materials India Pvt. Ltd.",
   "Reckon Diagnostics Pvt. Ltd.",
   "Medispace Solutions (Snibe)",
   "Pathoworld Labtech Pvt. Ltd.",
@@ -20,6 +20,6 @@ export const partners = [
   "Astra Bioscience",
   "Immunoshop India Pvt. Ltd.",
   "Immuno Concept India Pvt. Ltd.",
-  "Casara Diagnostics Pvt. Ltd.",
+  "Cosara Diagnostics Pvt. Ltd.",
   "Alsat Diagnostics Pvt. Ltd.",
 ];
